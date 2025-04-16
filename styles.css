@@ -33,6 +33,9 @@ body {
   body.dark .project-card:hover {
     background-color: #333;
   }
+  body.dark .burger-menu {
+    color: white;
+  }
   
   .theme-toggle {
     position: absolute;
@@ -100,7 +103,7 @@ body {
   
   .burger-menu {
     display: none;
-    color: white;
+    color: black;
     font-size: 2rem;
     padding: 1rem;
     cursor: pointer;
