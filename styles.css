@@ -5,7 +5,6 @@ body {
     color: #333;
     transition: background-color 0.3s, color 0.3s;
   }
-  
   /* Mode sombre */
   body.dark {
     background-color: #111;
@@ -157,6 +156,13 @@ body {
     width: 100%;
     object-fit: cover;
     height: 180px;
+    flex-shrink: 0;
+    max-width: 100%;
+  }
+  .carousel img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
     flex-shrink: 0;
     max-width: 100%;
   }
