@@ -1,47 +1,76 @@
+<!-- python_data.html -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Analyse de données avec Python</title>
-  <link rel="stylesheet" href="../styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analyse de données - Python</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/png" href="../images/favicon.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Analyse de données avec Python</h1>
-    </header>
+  <div class="theme-toggle">
+    <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+  </div>
 
-    <section>
-      <h2>Résumé</h2>
-      <p>Utilisation de bibliothèques Python comme pandas, seaborn et matplotlib pour analyser et visualiser des données. Création de graphiques, exploration de corrélations et résumé statistique de datasets réels.</p>
-    </section>
+  <header>
+    <h1>Gora DIONGUE</h1>
+    <p>Data Analyst | Développeur Web | Enseignant</p>
+    <a href="../cv/Gora DIONGUE CV Professional.pdf" download="Gora DIONGUE CV Professional" target="_blank" class="btn-cv">Télécharger CV</a>
+  </header>
 
+  <main>
     <section>
-      <h2>Technologies utilisées</h2>
+      <h2>Analyse de données avec Python</h2>
+      <p>Exploration de données avec Pandas, Seaborn, Matplotlib. Nettoyage, visualisations, statistiques descriptives.</p>
       <ul>
         <li>Python</li>
-        <li>Pandas</li>
-        <li>Matplotlib</li>
-        <li>Seaborn</li>
-        <li>Jupyter Notebook</li>
+        <li>Pandas, Seaborn, Matplotlib</li>
       </ul>
+      <div class="carousel-container">
+        <div class="carousel">
+          <img src="../images/python1.jpg" alt="Analyse Python 1">
+          <img src="../images/python2.jpg" alt="Analyse Python 2">
+        </div>
+      </div>
+      <p><a href="../index.html">&#8592; Retour au portfolio</a></p>
     </section>
 
-    <section>
-      <h2>Ce que j'ai appris</h2>
-      <p>Manipulation de données complexes, visualisation efficace, interprétation de données statistiques, et présentation claire des résultats.</p>
+    <section id="reseaux">
+      <h2>Réseaux & Pages</h2>
+      <div style="display: flex; gap: 1.5rem; justify-content: center; font-size: 1.8rem;">
+        <a href="https://www.facebook.com/gora.diongue.773" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/maths_code_delire?igsh=MWphYnd4ZHA5ZnJrNQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/221778850501" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://golden20boy.github.io/MonPortfolio/" target="_blank"><i class="fas fa-globe"></i></a>
+        <a href="https://github.com/golden20boy" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gora-diongue-08382b189" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
     </section>
 
-    <section>
-      <h2>Captures d'écran / Lien GitHub</h2>
-      <p><a href="https://github.com/golden20boy" target="_blank">Voir le projet sur GitHub</a></p>
-      <!-- Ajouter ici des balises <img> avec des captures plus tard -->
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Nom" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+        <p>Email : <a href="mailto:goradiongue97@gmail.com">goradiongue97@gmail.com</a></p>
+        <p>Téléphone : <a href="tel:+221778850501">+221 77 885 05 01</a> / <a href="tel:+221786998712">+221 78 699 87 12</a></p>
+        <p>GitHub : <a href="https://github.com/golden20boy" target="_blank">github.com/golden20boy</a></p>
+      </div>
     </section>
 
-    <footer>
-      <a href="../index.html">&larr; Retour au portfolio</a>
-    </footer>
-  </div>
+    <section class="footer">
+      <footer>
+        &copy; 2025 Gora DIONGUE | <button id="langToggle">🇫🇷 / 🇬🇧</button>
+      </footer>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
 </body>
 </html>
