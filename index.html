@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gora DIONGUE - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="images/favicon.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+    </div>
+
+    <header>
+        <h1>Gora DIONGUE</h1>
+        <p>Data Analyst | Développeur Web | Enseignant</p>
+        <a href="cv/Gora DIONGUE CV Professional.pdf" download="Gora DIONGUE CV Professional" target="_blank" class="btn-cv">Télécharger CV</a>
+    </header>
+
+
+
+    <main>
+        <section>
+            <nav>
+                <div class="burger-menu" id="burgerMenu">&#9776;</div>
+                <ul id="navLinks">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="about">
+            <h2>À propos</h2>
+            <p>Étudiant en mathématiques, passionné par l'analyse de données et le développement web. J'enseigne les mathématiques et développe des applications web ou no-code, ainsi que des solutions d'analyse pour entreprises et écoles.</p>
+        </section>
+    
+        <section id="skills">
+            <h2>Compétences</h2>
+            <ul>
+            <li>Python, C, MATLAB</li>
+            <li>Excel, Power BI, Pandas, Seaborn, Matplotlib</li>
+            <li>HTML/CSS, Flask, React, Node.js (bases)</li>
+            <li>SQLite, Google Sheets, AppSheet</li>
+            <li>Google Apps Script, API REST</li>
+            <li>Deep Learning (en cours avec TensorFlow/Keras)</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="fade-in">
+            <h2>Projets</h2>
+            <div class="filter-buttons">
+              <button class="filter-btn" data-filter="all">Tous</button>
+              <button class="filter-btn" data-filter="python">Python</button>
+              <button class="filter-btn" data-filter="web">Web</button>
+              <button class="filter-btn" data-filter="powerbi">Power BI</button>
+              <button class="filter-btn" data-filter="appsheet">AppSheet</button>
+              <button class="filter-btn" data-filter="sheets">Google Sheets</button>
+            </div>
+          
+            <div class="projects-grid">
+          
+              <a href="projets/python_data.html" class="project-card premium python">
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/python1.jpg" alt="Analyse Python 1">
+                    <img src="images/python2.jpg" alt="Analyse Python 2">
+                  </div>
+                </div>
+                <h3>Analyse de données</h3>
+                <p>Exploration de données avec Pandas, Seaborn, Matplotlib. Nettoyage, visualisations, statistiques descriptives.</p>
+              </a>
+          
+              <a href="projets/portfolio.html" class="project-card premium web">
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/portfolio1.jpg" alt="Portfolio 1">
+                    <img src="images/portfolio2.jpg" alt="Portfolio 2">
+                  </div>
+                </div>
+                <h3>Site Portfolio</h3>
+                <p>Portfolio personnel développé en HTML/CSS. Hébergé sur GitHub Pages.</p>
+              </a>
+          
+              <a href="projets/powerbi_ngor.html" class="project-card premium powerbi">
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/powerbi1.jpg" alt="PowerBI 1">
+                    <img src="images/powerbi2.jpg" alt="PowerBI 2">
+                  </div>
+                </div>
+                <h3>Dashboard Ngor</h3>
+                <p>Tableau de bord Power BI sur les données terrain de la zone de Ngor. Visualisation interactive et filtrage.</p>
+              </a>
+          
+              <a href="projets/flask_ecommerce.html" class="project-card premium web">
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/ecommerce1.jpg" alt="E-commerce 1">
+                    <img src="images/ecommerce2.jpg" alt="E-commerce 2">
+                  </div>
+                </div>
+                <h3>Site e-commerce - Flask</h3>
+                <p>Site de vente en ligne avec Flask (Python), HTML/CSS et SQLite. Fonctionnel localement.</p>
+              </a>
+          
+              <a href="projets/qrcode_pointage.html" class="project-card premium web sheets">
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/qrcode1.jpg" alt="QR Code 1">
+                    <img src="images/qrcode2.jpg" alt="QR Code 2">
+                  </div>
+                </div>
+                <h3>QR Code - Pointage automatique</h3>
+                <p>Système de pointage automatisé avec Google Sheets et Google Apps Script. Scan via QR Code pour valider les présences.</p>
+              </a>
+          
+              <a href="projets/appsheet_suivi.html" class="project-card premium appsheet sheets">
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/appsheet1.jpg" alt="AppSheet 1">
+                    <img src="images/appsheet2.jpg" alt="AppSheet 2">
+                  </div>
+                </div>
+                <h3>App de suivi des agents</h3>
+                <p>Application créée avec AppSheet pour suivre les négociations commerciales des agents terrain. Données stockées sur Google Sheets.</p>
+              </a>
+          
+            </div>
+        </section>
+          
+        <section class="footer">
+            <footer>
+                &copy; 2025 Gora DIONGUE | <button id="langToggle">🇫🇷 / 🇬🇧</button>
+            </footer>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
