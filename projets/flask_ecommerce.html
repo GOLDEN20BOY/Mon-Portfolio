@@ -1,40 +1,77 @@
+<!-- flask_ecommerce.html -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site e-commerce - Flask</title>
-  <link rel="stylesheet" href="../styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site E-commerce - Flask</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/png" href="../images/favicon.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Site e-commerce avec Flask</h1>
-    </header>
-
-    <section>
-      <h2>Résumé</h2>
-      <p>Développement d’un site web de vente en ligne en utilisant Flask. Système de gestion de produits, panier d’achat et interface simple pour les utilisateurs. Projet terminé mais en attente de déploiement.</p>
-    </section>
-
-    <section>
-      <h2>Technologies utilisées</h2>
-      <ul>
-        <li>Python</li>
-        <li>Flask</li>
-        <li>HTML/CSS</li>
-        <li>SQLite</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Statut du projet</h2>
-      <p>Fonctionnel localement — en cours de déploiement (Render, Railway ou autre).</p>
-    </section>
-
-    <footer>
-      <a href="../index.html">&larr; Retour au portfolio</a>
-    </footer>
+  <div class="theme-toggle">
+    <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
   </div>
+
+  <header>
+    <h1>Gora DIONGUE</h1>
+    <p>Data Analyst | Développeur Web | Enseignant</p>
+    <a href="../cv/Gora DIONGUE CV Professional.pdf" download="Gora DIONGUE CV Professional" target="_blank" class="btn-cv">Télécharger CV</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>Site e-commerce - Flask</h2>
+      <p>Site de vente en ligne réalisé avec le framework Flask (Python). Intégration HTML/CSS, gestion du panier et des produits, base de données SQLite.</p>
+      <ul>
+        <li>Flask (Python)</li>
+        <li>HTML, CSS</li>
+        <li>Base de données SQLite</li>
+      </ul>
+      <div class="carousel-container">
+        <div class="carousel">
+          <img src="../images/ecommerce1.jpg" alt="E-commerce 1">
+          <img src="../images/ecommerce2.jpg" alt="E-commerce 2">
+        </div>
+      </div>
+      <p><a href="../index.html">&#8592; Retour au portfolio</a></p>
+    </section>
+
+    <section id="reseaux">
+      <h2>Réseaux & Pages</h2>
+      <div style="display: flex; gap: 1.5rem; justify-content: center; font-size: 1.8rem;">
+        <a href="https://www.facebook.com/gora.diongue.773" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/maths_code_delire?igsh=MWphYnd4ZHA5ZnJrNQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/221778850501" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://golden20boy.github.io/MonPortfolio/" target="_blank"><i class="fas fa-globe"></i></a>
+        <a href="https://github.com/golden20boy" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gora-diongue-08382b189" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Nom" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+        <p>Email : <a href="mailto:goradiongue97@gmail.com">goradiongue97@gmail.com</a></p>
+        <p>Téléphone : <a href="tel:+221778850501">+221 77 885 05 01</a> / <a href="tel:+221786998712">+221 78 699 87 12</a></p>
+        <p>GitHub : <a href="https://github.com/golden20boy" target="_blank">github.com/golden20boy</a></p>
+      </div>
+    </section>
+
+    <section class="footer">
+      <footer>
+        &copy; 2025 Gora DIONGUE | <button id="langToggle">🇫🇷 / 🇬🇧</button>
+      </footer>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
 </body>
 </html>
