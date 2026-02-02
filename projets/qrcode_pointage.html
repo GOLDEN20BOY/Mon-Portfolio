@@ -21,34 +21,63 @@
   </header>
 
   <main>
-    <section>
-      <h2>QR Code - Pointage automatique</h2>
-      <p>Système de pointage automatisé pour les présences via scan QR Code. Les données sont enregistrées en temps réel dans Google Sheets à l'aide de Google Apps Script.</p>
+        <section>
+      <h2>POINTPRO — Pointage QR Code automatisé</h2>
+    
+      <p>
+        Solution de pointage web (mobile-first) déployée via GitHub Pages et connectée à Google Sheets
+        grâce à Google Apps Script. Chaque employé scanne un QR Code personnel pour pointer en 1 clic.
+      </p>
+    
+      <h3>Contexte</h3>
+      <p>
+        À mon arrivée, l’entreprise ne disposait pas de système de pointage. L’objectif était d’avoir une solution
+        simple, rapide à adopter, et exploitable pour le reporting (présences, retards, urgences, heures).
+      </p>
+    
+      <h3>Fonctionnalités</h3>
       <ul>
-        <li>Google Sheets</li>
-        <li>Google Apps Script</li>
-        <li>QR Code généré et scanné</li>
+        <li>QR Code personnel contenant un lien (paramètre email)</li>
+        <li>Actions : Arrivée, Urgence (raison), Fin d’urgence, Descente</li>
+        <li>Contrôles : pas d’urgence/descente sans arrivée, anti-doublon, messages utilisateur</li>
+        <li>Géolocalisation optionnelle + récupération du lieu (reverse geocoding)</li>
+        <li>Feuilles : Utilisateurs, Pointage, Liste de présence, Statistiques, Graphiques</li>
+        <li>Stats semaine/mois + score + classement</li>
+        <li>Emails automatiques hebdomadaires et mensuels</li>
       </ul>
+    
+      <h3>Technologies</h3>
+      <ul>
+        <li>Frontend : HTML / CSS / JavaScript (responsive)</li>
+        <li>Backend : Google Apps Script (doGet Web App)</li>
+        <li>Data : Google Sheets (stockage + reporting)</li>
+        <li>Déploiement : GitHub Pages</li>
+      </ul>
+    
+      <h3>Liens</h3>
+      <ul>
+        <li><strong>Démo</strong> : <a href="https://golden20boy.github.io/pointage1/pointage.html" target="_blank" rel="noopener">Ouvrir l’application</a></li>
+        <li><strong>Code</strong> : <a href="https://github.com/golden20boy/pointage1" target="_blank" rel="noopener">Repo GitHub</a></li>
+      </ul>
+    
+      <h3>Captures</h3>
       <div class="carousel-container">
-        <p>c est juste un essaie </p>
         <div class="carousel">
-          <img src="../images/qrcode1.jpg" alt="QR Code 1">
+          <img src="../images/site_web.png" alt="Interface web POINTPRO">
+          <img src="../images/feuille_pointage.png" alt="Feuille Pointage (Google Sheets)">
+          <img src="../images/feuille_statistique.png" alt="Feuille Statistiques">
+          <img src="../images/feuille_graphes.png" alt="Feuille Graphiques (Dashboards)">
+          <img src="../images/utilisateur.png" alt="Utilisateurs + QR Codes">
         </div>
       </div>
+    
+      <p style="opacity:.85;font-size:.95em;margin-top:1rem;">
+        Note confidentialité : sur une version production, l’URL QR peut utiliser un identifiant (token) au lieu de l’email.
+      </p>
+    
       <p><a href="../index.html">&#8592; Retour au portfolio</a></p>
     </section>
 
-    <section id="reseaux">
-      <h2>Réseaux & Pages</h2>
-      <div style="display: flex; gap: 1.5rem; justify-content: center; font-size: 1.8rem;">
-        <a href="https://www.facebook.com/gora.diongue.773" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/maths_code_delire?igsh=MWphYnd4ZHA5ZnJrNQ==" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/221778850501" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://golden20boy.github.io/MonPortfolio/" target="_blank"><i class="fas fa-globe"></i></a>
-        <a href="https://github.com/golden20boy" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/gora-diongue-08382b189" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </section>
 
     <section class="footer">
       <footer>
@@ -60,3 +89,4 @@
   <script src="../script.js"></script>
 </body>
 </html>
+
