@@ -345,7 +345,7 @@ footer {
 
 .carousel-container.scrollable img {
   width: auto;
-  min-width: 900px;        /* largeur réelle du tableau */
+  min-width: 100px;        /* largeur réelle du tableau */
   max-width: none;
   height: auto;
   max-height: 500px;
@@ -357,7 +357,16 @@ footer {
 /* Mobile */
 @media (max-width: 600px) {
   .carousel-container.scrollable img {
-    min-width: 700px;
+    min-width: 100px;
     max-height: 300px;
   }
+}
+.carousel-container.scrollable .carousel {
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel-container.scrollable img {
+  scroll-snap-align: start;
 }
