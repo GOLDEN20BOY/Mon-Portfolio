@@ -1,58 +1,130 @@
-<!-- powerbi_ngor.html -->
+<!-- powerbi_mobi.html -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard Power BI - Ngor</title>
+  <title>Power BI – Système décisionnel MOBI SENEGAL</title>
   <link rel="stylesheet" href="../styles.css" />
   <link rel="icon" type="image/png" href="../images/favicon.jpg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
+
 <body>
+  <!-- Toggle thème -->
   <div class="theme-toggle">
     <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
   </div>
 
+  <!-- Header -->
   <header>
     <h1>Gora DIONGUE</h1>
-    <p>Data Analyst | Développeur Web | Enseignant</p>
-    <a href="../cv/Gora DIONGUE CV Professional.pdf" download="Gora DIONGUE CV Professional" target="_blank" class="btn-cv">Télécharger CV</a>
+    <p>Data Analyst | Business Intelligence | Développeur Web</p>
+    <a href="../cv/Gora DIONGUE CV Professional.pdf"
+       download
+       target="_blank"
+       class="btn-cv">Télécharger CV</a>
   </header>
 
   <main>
+    <!-- PROJET -->
     <section>
-      <h2>Dashboard Power BI - Zone de Ngor</h2>
-      <p>Tableau de bord interactif sur les données terrain de la zone testée à Ngor.</p>
+      <h2>Système décisionnel Power BI – MOBI SENEGAL HOLDING</h2>
+
+      <p>
+        Projet de <strong>Business Intelligence en production</strong> développé durant mon
+        <strong>stage (3 mois)</strong>, puis consolidé et étendu pendant un
+        <strong>CDD</strong>.
+        Le projet a évolué d’un dashboard exploratoire vers un
+        <strong>système complet de pilotage financier et opérationnel</strong>.
+      </p>
+
+      <h3>Objectifs</h3>
       <ul>
-        <li>Power BI</li>
-        <li>Visualisation de KPIs</li>
-        <li>Filtres dynamiques</li>
+        <li>Centraliser les données opérationnelles et financières</li>
+        <li>Automatiser la collecte depuis Google Sheets</li>
+        <li>Fournir des tableaux de bord fiables et dynamiques</li>
+        <li>Permettre un accès en temps réel via Power BI Service</li>
+        <li>Produire des rapports périodiques et d’urgence</li>
       </ul>
-      <div class="carousel-container">
-        <p>c est juste un essaie </p>
+
+      <h3>Périmètre couvert</h3>
+      <ul>
+        <li>Chiffre d’affaires : Sabot, Parking, Recouvrement</li>
+        <li>Charges de fonctionnement</li>
+        <li>Journal de caisse</li>
+        <li>Investissements & réinvestissements</li>
+        <li>Rémunérations</li>
+        <li>Logistique</li>
+        <li>Analyse par zone, agent, secteur, période</li>
+      </ul>
+
+      <h3>Architecture technique</h3>
+      <ul>
+        <li><strong>Source :</strong> Google Sheets (données terrain)</li>
+        <li><strong>ETL :</strong> Script Python (collecte, nettoyage, structuration)</li>
+        <li><strong>BI :</strong> Power BI Desktop (modèle & visualisations)</li>
+        <li><strong>Diffusion :</strong> Power BI Service (rapports en ligne)</li>
+      </ul>
+
+      <h3>Actualisation des données</h3>
+      <ul>
+        <li>Exécution du script Python</li>
+        <li>Actualisation du modèle Power BI Desktop</li>
+        <li>Publication vers Power BI Service</li>
+        <li>Données disponibles pour les utilisateurs concernés</li>
+      </ul>
+
+      <h3>Types de rapports</h3>
+      <ul>
+        <li>Rapports hebdomadaires</li>
+        <li>Rapports mensuels</li>
+        <li>Rapports d’urgence en cas de situation critique</li>
+      </ul>
+
+      <h3>Technologies</h3>
+      <ul>
+        <li>Power BI Desktop & Power BI Service</li>
+        <li>Python (pandas, automatisation)</li>
+        <li>Google Sheets & Google Drive</li>
+        <li>Analyse financière & Data Visualisation</li>
+      </ul>
+
+      <h3>Captures du système</h3>
+      <div class="carousel-container project-carousel">
         <div class="carousel">
-          <img src="../images/qrcode1.jpg" alt="QR Code 1">
+          <img src="../images/acceuille.PNG" alt="Dashboard global Power BI">
+          <img src="../images/parking.PNG" alt="Recettes Parking">
+          <img src="../images/sabot.PNG" alt="Recettes Sabot">
+          <img src="../images/recouvrement.PNG" alt="Recouvrement">
+          <img src="../images/charge de fonctionnement.PNG" alt="Charges de fonctionnement">
+          <img src="../images/suivi cot.PNG" alt="Suivi et indicateurs">
         </div>
       </div>
+
+      <p style="opacity:.85;font-size:.95em;margin-top:1rem;">
+        Les rapports sont accessibles en ligne via Power BI Service
+        et utilisés pour la prise de décision opérationnelle et stratégique.
+      </p>
+
       <p><a href="../index.html">&#8592; Retour au portfolio</a></p>
     </section>
 
+    <!-- RÉSEAUX -->
     <section id="reseaux">
       <h2>Réseaux & Pages</h2>
-      <div style="display: flex; gap: 1.5rem; justify-content: center; font-size: 1.8rem;">
+      <div style="display:flex;gap:1.5rem;justify-content:center;font-size:1.8rem;">
         <a href="https://www.facebook.com/gora.diongue.773" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/maths_code_delire?igsh=MWphYnd4ZHA5ZnJrNQ==" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://wa.me/221778850501" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://golden20boy.github.io/MonPortfolio/" target="_blank"><i class="fas fa-globe"></i></a>
         <a href="https://github.com/golden20boy" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/gora-diongue-08382b189" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
     </section>
 
+    <!-- FOOTER -->
     <section class="footer">
       <footer>
-        &copy; 2025 Gora DIONGUE | <button id="langToggle">🇫🇷 / 🇬🇧</button>
+        &copy; 2026 Gora DIONGUE | <button id="langToggle">🇫🇷 / 🇬🇧</button>
       </footer>
     </section>
   </main>
