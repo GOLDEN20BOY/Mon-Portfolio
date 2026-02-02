@@ -357,7 +357,7 @@ footer {
 /* Mobile */
 @media (max-width: 600px) {
   .carousel-container.scrollable img {
-    min-width: 25px;
+    min-width: 1px;
     max-height: 300px;
   }
 }
@@ -370,4 +370,5 @@ footer {
 .carousel-container.scrollable img {
   scroll-snap-align: start;
 }
+
 
