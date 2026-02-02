@@ -63,3 +63,55 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }, 4000);
   });
   
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("capturesCarousel");
+  if (!container) return;
+
+  const rail = container.querySelector(".carousel");
+  const shots = Array.from(rail.querySelectorAll("img"));
+  if (shots.length === 0) return;
+
+  let i = 0;
+
+  function scrollToImageStart(index) {
+    const img = shots[index];
+    container.scrollTo({ left: img.offsetLeft, behavior: "smooth" });
+  }
+
+  function next() {
+    i = (i + 1) % shots.length;
+    scrollToImageStart(i);
+    setTimeout(autopan, 700); // laisser le temps au scroll
+  }
+
+  function autopan() {
+    const img = shots[i];
+    const start = img.offsetLeft;
+    const end = start + img.offsetWidth;
+    const viewEnd = container.scrollLeft + container.clientWidth;
+
+    // Si l'image déborde encore à droite, on avance un peu
+    if (viewEnd < end - 5) {
+      container.scrollBy({ left: Math.min(200, end - viewEnd), behavior: "smooth" });
+      setTimeout(autopan, 700);
+    } else {
+      // sinon on passe à l'image suivante
+      setTimeout(next, 900);
+    }
+  }
+
+  // Démarrage : on se place au début
+  scrollToImageStart(i);
+  setTimeout(autopan, 900);
+
+  // Optionnel : pause auto si l'utilisateur scrolle manuellement
+  let userInteracting = false;
+  container.addEventListener("scroll", () => {
+    userInteracting = true;
+    clearTimeout(container._resumeTimer);
+    container._resumeTimer = setTimeout(() => {
+      userInteracting = false;
+      autopan();
+    }, 2000);
+  });
+});
