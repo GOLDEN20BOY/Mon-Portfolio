@@ -177,7 +177,7 @@ section {
 
 .project-card.premium .carousel {
   display: flex;
-  width: 200%;
+  width: 100%;
   animation: slide 8s infinite ease-in-out;
 }
 
@@ -370,5 +370,4 @@ footer {
 .carousel-container.scrollable img {
   scroll-snap-align: start;
 }
-
 
