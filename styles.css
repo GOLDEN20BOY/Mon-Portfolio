@@ -345,7 +345,7 @@ footer {
 
 .carousel-container.scrollable img {
   width: auto;
-  min-width: 100px;        /* largeur réelle du tableau */
+  min-width: 40px;        /* largeur réelle du tableau */
   max-width: none;
   height: auto;
   max-height: 500px;
@@ -357,7 +357,7 @@ footer {
 /* Mobile */
 @media (max-width: 600px) {
   .carousel-container.scrollable img {
-    min-width: 100px;
+    min-width: 40px;
     max-height: 300px;
   }
 }
