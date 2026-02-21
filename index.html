@@ -9,168 +9,220 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
-    <div class="theme-toggle">
-        <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
-    </div>
+  <div class="top-controls">
 
-    <header>
-        <h1>Gora DIONGUE</h1>
-        <p>Data Analyst | Développeur Web | Enseignant</p>
-        <a href="cv/Gora DIONGUE CV Professional.pdf" download="Gora DIONGUE CV Professional" target="_blank" class="btn-cv">Télécharger CV</a>
-    </header>
+    <button id="darkModeToggle" class="icon-btn" aria-label="Activer le mode sombre">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
 
+  <header>
+    <a href="index.html" style="text-decoration: none;">
+      <h1>Gora DIONGUE</h1>
+    </a>
 
+    <p data-i18n="tagline">Data Analyst | Automatisation | Business Intelligence</p>
 
-    <main>
-        <section>
-            <nav>
-                <div class="burger-menu" id="burgerMenu">&#9776;</div>
-                <ul id="navLinks">
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section id="about">
-            <h2>À propos</h2>
-            <p>Étudiant en mathématiques, passionné par l'analyse de données et le développement web. J'enseigne les mathématiques et développe des applications web ou no-code, ainsi que des solutions d'analyse pour entreprises et écoles.</p>
-        </section>
-    
-        <section id="skills">
-            <h2>Compétences</h2>
-            <ul>
-            <li>Python, C, MATLAB</li>
-            <li>Excel, Power BI, Pandas, Seaborn, Matplotlib</li>
-            <li>HTML/CSS, Flask, React, Node.js (bases)</li>
-            <li>SQLite, Google Sheets, AppSheet</li>
-            <li>Google Apps Script, API REST</li>
-            <li>Deep Learning (en cours avec TensorFlow/Keras)</li>
-            </ul>
-        </section>
+    <a
+      href="cv/Gora DIONGUE CV Professional.pdf"
+      download="Gora DIONGUE CV Professional"
+      target="_blank"
+      class="btn-cv"
+      data-i18n="download_cv"
+    >
+      Télécharger CV
+    </a>
+  </header>
 
-        <section id="projects" class="fade-in">
-            <h2>Projets</h2>
-            <div class="filter-buttons">
-              <button class="filter-btn" data-filter="all">Tous</button>
-              <button class="filter-btn" data-filter="python">Python</button>
-              <button class="filter-btn" data-filter="web">Web</button>
-              <button class="filter-btn" data-filter="powerbi">Power BI</button>
-              <button class="filter-btn" data-filter="appsheet">AppSheet</button>
-              <button class="filter-btn" data-filter="sheets">Google Sheets</button>
+  <main>
+    <section>
+      <nav>
+        <div class="burger-menu" id="burgerMenu">&#9776;</div>
+        <ul id="navLinks">
+          <li><a href="#about" data-i18n="nav_about">À propos</a></li>
+          <li><a href="#skills" data-i18n="nav_skills">Compétences</a></li>
+          <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="about">
+      <h2 data-i18n="about_title">À propos</h2>
+      <p data-i18n="about_text">
+        Data Analyst spécialisé en automatisation et Business Intelligence.
+        Je conçois des systèmes de pilotage basés sur la donnée :
+        structuration SQL, automatisation Python et tableaux de bord Power BI.
+        Mon objectif : transformer les opérations terrain en indicateurs
+        clairs pour la prise de décision stratégique.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2 data-i18n="skills_title">Compétences</h2>
+
+      <div class="skills-grid">
+        <div>
+          <h4 data-i18n="skills_data_sql_title">Data & SQL</h4>
+          <p data-i18n="skills_data_sql_text">Python (Pandas), SQL, structuration de données, KPI</p>
+        </div>
+
+        <div>
+          <h4 data-i18n="skills_bi_title">Business Intelligence</h4>
+          <p data-i18n="skills_bi_text">Power BI (DAX, modélisation), Data storytelling</p>
+        </div>
+
+        <div>
+          <h4 data-i18n="skills_auto_title">Automatisation</h4>
+          <p data-i18n="skills_auto_text">Reporting Python, Google Sheets avancé, Apps Script</p>
+        </div>
+
+        <div>
+          <h4 data-i18n="skills_web_title">Développement Web</h4>
+          <p data-i18n="skills_web_text">FastAPI, API REST, HTML/CSS</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2 data-i18n="projects_title">Projets</h2>
+
+      <div class="filter-buttons">
+        <button class="filter-btn" data-filter="all" data-i18n="filter_all">Tous</button>
+        <button class="filter-btn" data-filter="data" data-i18n="filter_data">Data &amp; Business Intelligence</button>
+        <button class="filter-btn" data-filter="automation" data-i18n="filter_automation">Automatisation</button>
+        <button class="filter-btn" data-filter="web" data-i18n="filter_web">Développement Web</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Power BI => Data & BI -->
+        <a href="projets/powerbi.html" class="project-card premium data">
+          <div class="carousel-container">
+            <div class="carousel">
+              <img src="images/acceuille.PNG" alt="PowerBI 1">
+              <img src="images/suivi cot.PNG" alt="PowerBI 2">
             </div>
-          
-            <div class="projects-grid">
-          
-              <a href="projets/python_data.html" class="project-card premium python">
-                <div class="carousel-container">
-                  <div class="carousel">
-                    <img src="images/python1.jpg" alt="Analyse Python 1">
-                    <img src="images/python2.jpg" alt="Analyse Python 2">
-                  </div>
-                </div>
-                <h3>Analyse de données</h3>
-                <p>Exploration de données avec Pandas, Seaborn, Matplotlib. Nettoyage, visualisations, statistiques descriptives.</p>
-              </a>
-          
-              <a href="projets/portfolio.html" class="project-card premium web">
-                <div class="carousel-container">
-                  <div class="carousel">
-                    <img src="images/portfolio1.jpg" alt="Portfolio 1">
-                    <img src="images/portfolio2.jpg" alt="Portfolio 2">
-                  </div>
-                </div>
-                <h3>Site Portfolio</h3>
-                <p>Portfolio personnel développé en HTML/CSS. Hébergé sur GitHub Pages.</p>
-              </a>
-          
-              <a href="projets/powerbi_ngor.html" class="project-card premium powerbi">
-                <div class="carousel-container">
-                  <div class="carousel">
-                    <img src="images/acceuille.PNG" alt="PowerBI 1">
-                    <img src="images/suivi cot.PNG" alt="PowerBI 2">
-                  </div>
-                </div>
-                <h3>Système décisionnel Power BI </h3>
-                <p>Système Power BI automatisé pour le suivi financier et opérationnel</p>
-              </a>
-          
-              <a href="projets/flask_ecommerce.html" class="project-card premium web">
-                <div class="carousel-container">
-                  <div class="carousel">
-                    <img src="images/ecommerce1.jpg" alt="E-commerce 1">
-                    <img src="images/ecommerce2.jpg" alt="E-commerce 2">
-                  </div>
-                </div>
-                <h3>Site e-commerce - Flask</h3>
-                <p>Site de vente en ligne avec Flask (Python), HTML/CSS et SQLite. Fonctionnel localement.</p>
-              </a>
-          
-              <a href="projets/qrcode_pointage.html" class="project-card premium web sheets">
-                <div class="carousel-container">
-                  <div class="carousel">
-                    <img src="images/qrcode1.jpg" alt="QR Code 1">
-                    <img src="images/qrcode2.jpg" alt="QR Code 2">
-                  </div>
-                </div>
-                <h3>QR Code - Pointage automatique</h3>
-                <p>Système de pointage automatisé avec Google Sheets et Google Apps Script. Scan via QR Code pour valider les présences.</p>
-              </a>
-          
-              <a href="projets/appsheet_suivi.html" class="project-card premium appsheet sheets">
-                <div class="carousel-container">
-                  <div class="carousel">
-                    <img src="images/appsheet1.jpg" alt="AppSheet 1">
-                    <img src="images/appsheet2.jpg" alt="AppSheet 2">
-                  </div>
-                </div>
-                <h3>App de suivi des agents</h3>
-                <p>Application créée avec AppSheet pour suivre les négociations commerciales des agents terrain. Données stockées sur Google Sheets.</p>
-              </a>
-          
-            </div>
-        </section>
-        <section id="reseaux">
-            <h2>Réseaux & Pages</h2>
-            <div style="display: flex; gap: 1.5rem; justify-content: center; font-size: 1.8rem;">
-            <a href="https://www.facebook.com/gora.diongue.773" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/maths_code_delire?igsh=MWphYnd4ZHA5ZnJrNQ==" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/221778850501" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://golden20boy.github.io/MonPortfolio/" target="_blank"><i class="fas fa-globe"></i></a>
-            <a href="https://github.com/golden20boy" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/gora-diongue-08382b189" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </section>
-        
-        <section id="contact" class="fade-in">
-            <h2>Contact</h2>
-            <form id="contactForm">
-                <input type="text" name="name" placeholder="Nom" required />
-                <input type="email" name="email" placeholder="Email" required />
-                <textarea name="message" placeholder="Message" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-            <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
-                <p>Email : <a href="mailto:goradiongue97@gmail.com">goradiongue97@gmail.com</a></p>
-                <p>
-                    Téléphone : 
-                    <a href="tel:+221778850501">+221 77 885 05 01</a> /
-                    <a href="tel:+221786998712">+221 78 699 87 12</a>
-                  </p>
-                  
-                <p>GitHub : <a href="https://github.com/golden20boy" target="_blank">github.com/golden20boy</a></p>
-            </div>
-        </section>
-          
-        <section class="footer">
-            <footer>
-                &copy; 2025 Gora DIONGUE | <button id="langToggle">🇫🇷 / 🇬🇧</button>
-            </footer>
-        </section>
-    </main>
+          </div>
+          <h3 data-i18n="p_powerbi_title">Système décisionnel Power BI</h3>
+          <p data-i18n="p_powerbi_desc">Système Power BI automatisé pour le suivi financier et opérationnel.</p>
+        </a>
 
+        <!-- Suivi recouvrement => Automatisation -->
+        <a href="projets/suivi_recouvrement.html" class="project-card premium automation">
+          <div class="carousel-container">
+            <div class="carousel">
+              <img src="images/recouvrement_3.png" alt="Suivi recouvrement 1">
+              <img src="images/recouvrement_1.png" alt="Suivi recouvrement 2">
+            </div>
+          </div>
+          <h3 data-i18n="p_recouv_title">Suivi de recouvrement (Google Sheets)</h3>
+          <p data-i18n="p_recouv_desc">Vision temps réel, statuts payés/retards automatisés, vues par commercial et données prêtes pour Power BI.</p>
+        </a>
 
-    <script src="script.js"></script>
+        <!-- QR Code => Automatisation + Web -->
+        <a href="projets/qrcode_pointage.html" class="project-card premium automation web">
+          <div class="carousel-container">
+            <div class="carousel">
+              <img src="images/qrcode1.jpg" alt="QR Code 1">
+              <img src="images/qrcode2.jpg" alt="QR Code 2">
+            </div>
+          </div>
+          <h3 data-i18n="p_qr_title">QR Code - Pointage automatique</h3>
+          <p data-i18n="p_qr_desc">Système de pointage automatisé avec Google Sheets et Google Apps Script. Scan via QR Code pour valider les présences.</p>
+        </a>
+
+        <!-- MOBI POINTAGE => Développement Web -->
+        <a href="projets/mobi_pointage.html" class="project-card premium web">
+          <div class="carousel-container">
+            <div class="carousel">
+              <img src="images/mobi_pointage_1.png" alt="MOBI POINTAGE 1">
+              <img src="images/dashboard.png" alt="MOBI POINTAGE 2">
+            </div>
+          </div>
+          <h3 data-i18n="p_mobi_pointage_title">MOBI POINTAGE (FastAPI)</h3>
+          <p data-i18n="p_mobi_pointage_desc">Plateforme interne multi-agents : authentification, rôles, dashboards, recouvrement et reporting (projet en cours).</p>
+        </a>
+
+        <!-- MOBI DATA HUB => Automatisation -->
+        <a href="projets/mobi_data_hub.html" class="project-card premium automation">
+          <div class="carousel-container">
+            <div class="carousel">
+              <img src="images/mobi_sheets_cover1.png" alt="MOBI Data Hub 1">
+              <img src="images/mobi_sheets_cover1.png" alt="MOBI Data Hub 2">
+            </div>
+          </div>
+          <h3 data-i18n="p_mobi_hub_title">MOBI DATA HUB (Google Sheets)</h3>
+          <p data-i18n="p_mobi_hub_desc">Centralisation, automatisation Apps Script, sécurité par rôles, validations et base prête pour Power BI / Python.</p>
+        </a>
+                <!-- MOBI DATA HUB => Automatisation -->
+        <!-- PORTFOLIO WEB -->
+        <a href="projets/portfolio.html" class="project-card premium web">
+          <div class="carousel-container">
+            <div class="carousel">
+              <img src="images/portfolio1.png" alt="Portfolio - Accueil">
+              <img src="images/portfolio2.png" alt="Portfolio - Projets">
+              <img src="images/portfolio3.png" alt="Portfolio - Projets">
+            </div>
+          </div>
+
+          <h3 data-i18n="p_portfolio_title">
+            Portfolio Web (GitHub Pages)
+          </h3>
+
+          <p data-i18n="p_portfolio_desc">
+            Site vitrine personnel responsive : présentation, projets détaillés, contact et déploiement via GitHub Pages.
+          </p>
+        </a>
+
+      </div>
+    </section>
+
+    <section id="reseaux">
+      <h2 data-i18n="reseaux_title">Réseaux & Pages</h2>
+      <div style="display: flex; gap: 1.5rem; justify-content: center; font-size: 1.8rem;">
+        <a href="https://www.facebook.com/gora.diongue.773" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/maths_code_delire?igsh=MWphYnd4ZHA5ZnJrNQ==" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/221778850501" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://golden20boy.github.io/MonPortfolio/" target="_blank" rel="noopener"><i class="fas fa-globe"></i></a>
+        <a href="https://github.com/golden20boy" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gora-diongue-08382b189" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2 data-i18n="contact_title">Contact</h2>
+
+      <form id="contactForm" action="https://formspree.io/f/xzdajpde" method="POST">
+        <input type="text" name="name" placeholder="Nom" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+
+        <input type="hidden" name="_subject" value="Nouveau message depuis mon Portfolio">
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit" data-i18n="send_btn">Envoyer</button>
+      </form>
+
+      <p id="formStatus" style="text-align:center; color: var(--muted);"></p>
+
+      <div class="contact-infos">
+        <p><span>Email :</span> <a href="mailto:goradiongue97@gmail.com">goradiongue97@gmail.com</a></p>
+        <p>
+          <span>Téléphone :</span>
+          <a href="tel:+221778850501">+221 77 885 05 01</a> /
+          <a href="tel:+221786998712">+221 78 699 87 12</a>
+        </p>
+        <p><span>GitHub :</span> <a href="https://github.com/golden20boy" target="_blank" rel="noopener">github.com/golden20boy</a></p>
+      </div>
+    </section>
+
+    <section class="footer">
+      <footer>
+        &copy; 2025 Gora DIONGUE 
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>

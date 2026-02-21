@@ -1,61 +1,132 @@
-<!-- python_data.html -->
+<!-- projets/python_data.html -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Analyse de données - Python</title>
+  <title data-i18n="py_page_title">Analyse de données - Python</title>
+
   <link rel="stylesheet" href="../styles.css" />
   <link rel="icon" type="image/png" href="../images/favicon.jpg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
+
 <body>
-  <div class="theme-toggle">
-    <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+
+  <!-- Top Controls (comme index.html) -->
+  <div class="top-controls">
+
+
+    <button id="darkModeToggle" class="icon-btn" aria-label="Activer le mode sombre">
+      <i class="fas fa-moon"></i>
+    </button>
   </div>
 
+  <!-- Header -->
   <header>
-    <h1>Gora DIONGUE</h1>
-    <p>Data Analyst | Développeur Web | Enseignant</p>
-    <a href="../cv/Gora DIONGUE CV Professional.pdf" download="Gora DIONGUE CV Professional" target="_blank" class="btn-cv">Télécharger CV</a>
+    <a href="../index.html" style="text-decoration: none;">
+      <h1>Gora DIONGUE</h1>
+    </a>
+
+    <p data-i18n="tagline">
+      Data Analyst | Automatisation | Business Intelligence
+    </p>
+
+    <a
+      href="../cv/Gora DIONGUE CV Professional.pdf"
+      download="Gora DIONGUE CV Professional"
+      target="_blank"
+      class="btn-cv"
+      data-i18n="download_cv"
+    >
+      Télécharger CV
+    </a>
   </header>
 
+  <!-- Main -->
   <main>
-    <section>
-      <h2>Analyse de données avec Python</h2>
-      <p>Exploration de données avec Pandas, Seaborn, Matplotlib. Nettoyage, visualisations, statistiques descriptives.</p>
+    <section class="fade-in">
+
+      <h2 data-i18n="py_title">
+        Analyse de données avec Python
+      </h2>
+
+      <p data-i18n="py_intro">
+        Exploration et analyse de données avec Pandas, Seaborn et Matplotlib.
+        Nettoyage, visualisations, statistiques descriptives et préparation
+        des données pour reporting et Business Intelligence.
+      </p>
+
+      <h3 data-i18n="py_tools_title">Technologies utilisées</h3>
+
       <ul>
         <li>Python</li>
-        <li>Pandas, Seaborn, Matplotlib</li>
+        <li>Pandas</li>
+        <li>Matplotlib</li>
+        <li>Seaborn</li>
       </ul>
+
+      <h3 data-i18n="py_example_title">Exemple / Démonstration</h3>
+
       <div class="carousel-container">
-        <p>c est juste un essaie </p>
+        <p data-i18n="py_example_text">
+          Prototype d’analyse exploratoire (exemple visuel).
+        </p>
+
         <div class="carousel">
-          <img src="../images/qrcode1.jpg" alt="QR Code 1">
+          <img src="../images/qrcode1.jpg" alt="Exemple visualisation Python">
         </div>
       </div>
-      <p><a href="../index.html">&#8592; Retour au portfolio</a></p>
+
+      <p style="margin-top: 1.5rem;">
+        <a href="../index.html" data-i18n="back_portfolio">
+          &#8592; Retour au portfolio
+        </a>
+      </p>
+
     </section>
 
+    <!-- Réseaux -->
     <section id="reseaux">
-      <h2>Réseaux & Pages</h2>
+      <h2 data-i18n="reseaux_title">Réseaux & Pages</h2>
+
       <div style="display: flex; gap: 1.5rem; justify-content: center; font-size: 1.8rem;">
-        <a href="https://www.facebook.com/gora.diongue.773" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/maths_code_delire?igsh=MWphYnd4ZHA5ZnJrNQ==" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/221778850501" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://golden20boy.github.io/MonPortfolio/" target="_blank"><i class="fas fa-globe"></i></a>
-        <a href="https://github.com/golden20boy" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/gora-diongue-08382b189" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/gora.diongue.773" target="_blank" rel="noopener">
+          <i class="fab fa-facebook"></i>
+        </a>
+
+        <a href="https://www.instagram.com/maths_code_delire?igsh=MWphYnd4ZHA5ZnJrNQ==" target="_blank" rel="noopener">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://wa.me/221778850501" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <a href="https://golden20boy.github.io/MonPortfolio/" target="_blank" rel="noopener">
+          <i class="fas fa-globe"></i>
+        </a>
+
+        <a href="https://github.com/golden20boy" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/gora-diongue-08382b189" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
       </div>
     </section>
 
+    <!-- Footer -->
     <section class="footer">
       <footer>
-        &copy; 2025 Gora DIONGUE | <button id="langToggle">🇫🇷 / 🇬🇧</button>
+        &copy; 2025 Gora DIONGUE
       </footer>
     </section>
+
   </main>
 
   <script src="../script.js"></script>
+
 </body>
 </html>

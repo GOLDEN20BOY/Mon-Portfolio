@@ -9,75 +9,82 @@
   <link rel="icon" type="image/png" href="../images/favicon.jpg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
+
 <body>
-  <div class="theme-toggle">
-    <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+  <div class="top-controls">
+
+    <button id="darkModeToggle" class="icon-btn" aria-label="Activer le mode sombre">
+      <i class="fas fa-moon"></i>
+    </button>
   </div>
 
   <header>
-    <h1>Gora DIONGUE</h1>
-    <p>Data Analyst | Développeur Web | Enseignant</p>
-    <a href="../cv/Gora DIONGUE CV Professional.pdf" download="Gora DIONGUE CV Professional" target="_blank" class="btn-cv">Télécharger CV</a>
+    <a href="../index.html" style="text-decoration: none;">
+      <h1>Gora DIONGUE</h1>
+    </a>
+    <p data-i18n="tagline">Data Analyst | Automatisation | Business Intelligence</p>
+    <a href="../cv/Gora DIONGUE CV Professional.pdf" download target="_blank" class="btn-cv" data-i18n="download_cv">
+      Télécharger CV
+    </a>
   </header>
 
   <main>
-          <section>
-        <h2>POINTPRO — Pointage QR Code automatisé</h2>
+    <section>
+      <h2 data-i18n="qr_title">POINTPRO — Pointage QR Code automatisé</h2>
 
-        <p>
-          Solution de pointage web (mobile-first) déployée via GitHub Pages et connectée à Google Sheets
-          grâce à Google Apps Script. Chaque employé scanne un QR Code personnel pour pointer en 1 clic.
-        </p>
+      <p data-i18n="qr_intro">
+        Solution de pointage web (mobile-first) déployée via GitHub Pages et connectée à Google Sheets grâce à Google Apps Script.
+      </p>
 
-        <h3>Contexte</h3>
-        <p>
-          À mon arrivée, l’entreprise ne disposait pas de système de pointage. L’objectif était d’avoir une solution
-          simple, rapide à adopter, et exploitable pour le reporting (présences, retards, urgences, heures).
-        </p>
+      <h3 data-i18n="qr_context_title">Contexte</h3>
+      <p data-i18n="qr_context_text">
+        À mon arrivée, l’entreprise ne disposait pas de système de pointage...
+      </p>
 
-        <h3>Fonctionnalités</h3>
-        <ul>
-          <li>QR Code personnel contenant un lien (paramètre email)</li>
-          <li>Actions : Arrivée, Urgence (raison), Fin d’urgence, Descente</li>
-          <li>Contrôles : pas d’urgence/descente sans arrivée, anti-doublon, messages utilisateur</li>
-          <li>Géolocalisation optionnelle + récupération du lieu (reverse geocoding)</li>
-          <li>Feuilles : Utilisateurs, Pointage, Liste de présence, Statistiques, Graphiques</li>
-          <li>Stats semaine/mois + score + classement</li>
-          <li>Emails automatiques hebdomadaires et mensuels</li>
-        </ul>
+      <h3 data-i18n="qr_features_title">Fonctionnalités</h3>
+      <ul>
+        <li>QR Code personnel contenant un lien (paramètre email)</li>
+        <li>Actions : Arrivée, Urgence (raison), Fin d’urgence, Descente</li>
+        <li>Contrôles : anti-doublon, règles métier, messages utilisateur</li>
+        <li>Géolocalisation optionnelle + récupération du lieu</li>
+        <li>Stats semaine/mois + score + classement</li>
+        <li>Emails automatiques hebdomadaires et mensuels</li>
+      </ul>
 
-        <h3>Technologies</h3>
-        <ul>
-          <li>Frontend : HTML / CSS / JavaScript (responsive)</li>
-          <li>Backend : Google Apps Script (doGet Web App)</li>
-          <li>Data : Google Sheets (stockage + reporting)</li>
-          <li>Déploiement : GitHub Pages</li>
-        </ul>
+      <h3 data-i18n="qr_tech_title">Technologies</h3>
+      <ul>
+        <li>Frontend : HTML / CSS / JavaScript (responsive)</li>
+        <li>Backend : Google Apps Script (doGet Web App)</li>
+        <li>Data : Google Sheets (stockage + reporting)</li>
+        <li>Déploiement : GitHub Pages</li>
+      </ul>
 
-        <h3>Liens</h3>
-        <ul>
-          <li><strong>Démo</strong> : <a href="https://golden20boy.github.io/pointage1/pointage.html" target="_blank" rel="noopener">Ouvrir l’application</a></li>
-          <li><strong>Code</strong> : <a href="https://github.com/golden20boy/pointage1" target="_blank" rel="noopener">Repo GitHub</a></li>
-        </ul>
+      <h3 data-i18n="qr_links_title">Liens</h3>
+      <ul>
+        <li><strong data-i18n="qr_demo">Démo</strong> :
+          <a href="https://golden20boy.github.io/pointage1/pointage.html" target="_blank" rel="noopener">Ouvrir l’application</a>
+        </li>
+        <li><strong data-i18n="qr_code">Code</strong> :
+          <a href="https://github.com/golden20boy/pointage1" target="_blank" rel="noopener">Repo GitHub</a>
+        </li>
+      </ul>
 
-        <h3>Captures</h3>
-          <div class="carousel-container scrollable" id="capturesCarousel">
-            <div class="carousel">
-              <img src="../images/site_web.png" alt="Interface web">
-              <img src="../images/feuille_pointage.png" alt="Feuille pointage">
-              <img src="../images/feuille_statistique.png" alt="Statistiques">
-              <img src="../images/feuille_graphes.png" alt="Graphiques">
-            </div>
-          </div>
+      <h3 data-i18n="qr_captures_title">Captures</h3>
+      <div class="carousel-container scrollable" id="capturesCarousel">
+        <div class="carousel">
+          <img src="../images/site_web.png" alt="Interface web">
+          <img src="../images/feuille_pointage.png" alt="Feuille pointage">
+          <img src="../images/feuille_statistique.png" alt="Statistiques">
+          <img src="../images/feuille_graphes.png" alt="Graphiques">
+        </div>
+      </div>
 
+      <p style="opacity:.85;font-size:.95em;margin-top:1rem;" data-i18n="qr_note">
+        Note confidentialité : sur une version production, l’URL QR peut utiliser un identifiant (token) au lieu de l’email.
+      </p>
 
-        <p style="opacity:.85;font-size:.95em;margin-top:1rem;">
-          Note confidentialité : sur une version production, l’URL QR peut utiliser un identifiant (token) au lieu de l’email.
-        </p>
-
-        <p><a href="../index.html">&#8592; Retour au portfolio</a></p>
-      </section>
-
+      <p><a href="../index.html" data-i18n="back_portfolio">← Retour au portfolio</a></p>
+    </section>
   </main>
 
   <script src="../script.js"></script>

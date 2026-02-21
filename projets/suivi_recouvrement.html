@@ -1,0 +1,126 @@
+<!-- suivi_recouvrement.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suivi de Recouvrement - Google Sheets (Automatisation)</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/png" href="../images/favicon.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Top controls (comme index) -->
+  <div class="top-controls">
+
+    <button id="darkModeToggle" class="icon-btn" aria-label="Activer le mode sombre">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+
+  <header>
+    <a href="../index.html" style="text-decoration: none;">
+      <h1>Gora DIONGUE</h1>
+    </a>
+    <p data-i18n="tagline">Data Analyst | Automatisation | Business Intelligence</p>
+    <a href="../cv/Gora DIONGUE CV Professional.pdf" download target="_blank" class="btn-cv" data-i18n="download_cv">
+      Télécharger CV
+    </a>
+  </header>
+
+  <main>
+    <section>
+      <h2 data-i18n="sr_title">SUIVI DE RECOUVREMENT — Pilotage temps réel & anti-oubli (Google Sheets)</h2>
+
+      <p data-i18n="sr_intro">
+        Système de suivi des recouvrements conçu pour offrir une vision instantanée des paiements, retards et montants à recouvrer, avec une automatisation complète sous Google Sheets.
+      </p>
+
+      <h3 data-i18n="sr_context_title">Contexte</h3>
+      <p data-i18n="sr_context_text">
+        Pour améliorer la visibilité et le pilotage financier, j’ai proposé à la Direction Générale un système centralisé...
+      </p>
+
+      <h3 data-i18n="sr_objectives_title">Objectifs</h3>
+      <ul>
+        <li>Suivi en ligne <strong>en temps réel</strong> (données consultables instantanément)</li>
+        <li>Automatiser les statuts : <strong>Payé / En retard / Non payé</strong></li>
+        <li>Réduire les oublis et supprimer les rapports manuels inutiles</li>
+        <li>Créer des vues par commercial (portefeuille clients)</li>
+        <li>Rendre les données prêtes pour KPI & Power BI (taux de recouvrement, évolution, segmentation)</li>
+      </ul>
+
+      <h3 data-i18n="sr_workflow_title">Workflow (processus métier)</h3>
+      <ol>
+        <li><strong>Saisie</strong> : le collecteur renseigne les paiements dans la feuille <em>RECETTES RECOUVREMENTS</em>.</li>
+        <li><strong>Centralisation</strong> : consolidation via <em>IMPORTRANGE</em>.</li>
+        <li><strong>Jointure</strong> : utilisation de la base clients (ID, contact, abonnement...).</li>
+        <li><strong>Automatisation</strong> : la feuille <em>SUIVI DE RECOUVREMENTS</em> se met à jour en continu.</li>
+        <li><strong>Vues décisionnelles</strong> : feuille <em>A RECOUVRIR</em> générée automatiquement.</li>
+      </ol>
+
+      <h3 data-i18n="sr_auto_title">Automatisation (Google Sheets avancé)</h3>
+      <ul>
+        <li><strong>Consolidation multi-fichiers</strong> : IMPORTRANGE + QUERY</li>
+        <li><strong>Génération automatique des colonnes mensuelles</strong></li>
+        <li><strong>Statuts dynamiques</strong> selon le type d’abonnement</li>
+        <li><strong>Filtrage complet</strong> : ID, agent, commune, zone, type client</li>
+        <li><strong>Tableaux de synthèse</strong> : payés / attendus / à recouvrer</li>
+      </ul>
+
+      <h3 data-i18n="sr_blocks_title">Exemples de briques techniques</h3>
+      <p style="opacity:.9" data-i18n="sr_blocks_text">
+        Quelques briques utilisées (extraits) : ARRAYFORMULA, FILTER, QUERY, IMPORTRANGE...
+      </p>
+
+      <details style="margin-top:.5rem;">
+        <summary><strong>Voir un exemple de consolidation (IMPORTRANGE)</strong></summary>
+        <pre style="white-space:pre-wrap;">
+=IMPORTRANGE("URL_DU_FICHIER", "RECETTES RECOUVREMENTS!A1:L")
+        </pre>
+      </details>
+
+      <details>
+        <summary><strong>Voir un exemple de logique "état de paiement"</strong></summary>
+        <pre style="white-space:pre-wrap;">
+- Si paiement trouvé → afficher montant payé
+- Sinon → En retard (si dépassement du délai)
+- Sinon → Non payé (si dépassement seuil)
+        </pre>
+      </details>
+
+      <h3 data-i18n="sr_tech_title">Technologies</h3>
+      <ul>
+        <li>Google Sheets (tables, vues, filtres, validations)</li>
+        <li>Fonctions avancées : ARRAYFORMULA, QUERY, IMPORTRANGE, FILTER, REGEXMATCH…</li>
+        <li>Business Intelligence : Power BI (KPI et visualisations)</li>
+      </ul>
+
+      <h3 data-i18n="sr_impact_title">Résultats & Impact</h3>
+      <ul>
+        <li><strong>Vision claire</strong> des encaissements et des retards (temps réel)</li>
+        <li><strong>Réduction des oublis</strong> via “A RECOUVRIR” auto-générée</li>
+        <li>Données prêtes pour Power BI : taux de recouvrement, progression, segmentation</li>
+      </ul>
+
+      <h3 data-i18n="sr_captures_title">Captures</h3>
+      <div class="carousel-container scrollable" id="capturesCarousel">
+        <div class="carousel">
+          <img src="../images/recouvrement_3.png" alt="Suivi de recouvrement par mois (statuts)">
+          <img src="../images/recouvrement_1.png" alt="progression et taux de recouvrement power bi">
+          <img src="../images/recouvrement_4.png" alt="Feuille A RECOUVRIR + synthèses">
+        </div>
+      </div>
+
+      <p style="opacity:.85;font-size:.95em;margin-top:1rem;" data-i18n="sr_note">
+        Note confidentialité : captures anonymisées (noms, montants, contacts) pour respecter les données entreprise.
+      </p>
+
+      <p><a href="../index.html" data-i18n="back_portfolio">← Retour au portfolio</a></p>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!-- projets/mobi_data_hub.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title data-i18n="hub_page_title">MOBI DATA HUB - Architecture Data Cloud</title>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/png" href="../images/favicon.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Top Controls -->
+  <div class="top-controls">
+
+    <button id="darkModeToggle" class="icon-btn" aria-label="Activer le mode sombre">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <a href="../index.html" style="text-decoration: none;">
+      <h1>Gora DIONGUE</h1>
+    </a>
+
+    <p data-i18n="tagline">Data Analyst | Automatisation | Business Intelligence</p>
+
+    <a
+      href="../cv/Gora DIONGUE CV Professional.pdf"
+      download="Gora DIONGUE CV Professional"
+      target="_blank"
+      class="btn-cv"
+      data-i18n="download_cv"
+    >
+      Télécharger CV
+    </a>
+  </header>
+
+  <main>
+    <section class="fade-in">
+
+      <h2 data-i18n="hub_title">
+        MOBI DATA HUB — Architecture Cloud & Gouvernance des Données
+      </h2>
+
+      <p data-i18n="hub_intro" data-i18n-html>
+        Conception et déploiement d’un <strong>système centralisé de gestion des données</strong> pour MOBI Senegal Holding.
+        L’architecture repose sur <strong>Google Sheets (cloud)</strong> renforcé par <strong>Google Apps Script</strong> afin d’assurer
+        un <strong>accès en ligne instantané</strong>, des <strong>mises à jour en temps réel</strong>, une <strong>sécurisation multi-niveaux</strong>
+        et une exploitation directe via <strong>Python / API / Power BI</strong>.
+      </p>
+
+      <h3 data-i18n="hub_context_title">Contexte</h3>
+      <p data-i18n="hub_context">
+        La Direction Générale souhaitait une solution fiable pour mettre en ligne les données stratégiques :
+        finances, clients/prospects, synthèses, données confidentielles et suivi opérationnel.
+        Le système devait être rapide à déployer, sécurisé, collaboratif et évolutif vers une architecture plus avancée
+        (PostgreSQL / ERP).
+      </p>
+
+      <h3 data-i18n="hub_realtime_title">Accès en ligne & collaboration temps réel</h3>
+      <ul>
+        <li data-i18n="hub_rt_1">Accès sécurisé depuis n’importe quel appareil connecté (PC / mobile)</li>
+        <li data-i18n="hub_rt_2">Mises à jour visibles instantanément par les utilisateurs autorisés</li>
+        <li data-i18n="hub_rt_3">Travail collaboratif simultané sans conflit de versions</li>
+        <li data-i18n="hub_rt_4">Historique complet des modifications et traçabilité</li>
+        <li data-i18n="hub_rt_5">Disponibilité continue sans installation locale</li>
+      </ul>
+
+      <h3 data-i18n="hub_goals_title">Objectifs stratégiques</h3>
+      <ul>
+        <li data-i18n="hub_goal_1">Centraliser les données critiques de l’entreprise</li>
+        <li data-i18n="hub_goal_2">Mettre en place une gouvernance claire par rôle</li>
+        <li data-i18n="hub_goal_3">Réduire les erreurs de saisie</li>
+        <li data-i18n="hub_goal_4">Permettre l’exploitation BI et les automatisations</li>
+        <li data-i18n="hub_goal_5">Préparer la migration vers une base SQL future</li>
+      </ul>
+
+      <h3 data-i18n="hub_arch_title">Architecture & Structuration</h3>
+      <ul>
+        <li data-i18n="hub_arch_1">Tables organisées par domaine métier</li>
+        <li data-i18n="hub_arch_2">Séparation données brutes / calculs / synthèses</li>
+        <li data-i18n="hub_arch_3">Clés structurées pour logique pseudo-relationnelle</li>
+        <li data-i18n="hub_arch_4">Organisation par service selon responsabilités</li>
+      </ul>
+
+      <h3 data-i18n="hub_security_title">Sécurité & Gouvernance des accès</h3>
+      <ul>
+        <li data-i18n="hub_sec_1">Partage personnalisé par invitation email</li>
+        <li data-i18n="hub_sec_2">Droits différenciés : lecture / commentaire / édition</li>
+        <li data-i18n="hub_sec_3">Protection avancée des feuilles et plages sensibles</li>
+        <li data-i18n="hub_sec_4">Séparation des données confidentielles</li>
+      </ul>
+
+      <h3 data-i18n="hub_quality_title">Qualité & Intégrité des données</h3>
+      <ul>
+        <li data-i18n="hub_qa_1">Validation de données (menus fixes, formats imposés)</li>
+        <li data-i18n="hub_qa_2">Mise en forme conditionnelle (alertes visuelles)</li>
+        <li data-i18n="hub_qa_3">Standardisation des champs pour éviter les incohérences</li>
+        <li data-i18n="hub_qa_4">Réduction significative des erreurs humaines</li>
+      </ul>
+
+      <h3 data-i18n="hub_auto_title">Automatisation & Intelligence</h3>
+      <ul>
+        <li data-i18n="hub_auto_1">Scripts automatisés via Google Apps Script</li>
+        <li data-i18n="hub_auto_2">Synchronisation et contrôles logiques automatiques</li>
+        <li data-i18n="hub_auto_3">Formules avancées : ARRAYFORMULA, QUERY, IMPORTRANGE</li>
+        <li data-i18n="hub_auto_4">Tableaux dynamiques et synthèses KPI automatisées</li>
+      </ul>
+
+      <h3 data-i18n="hub_scale_title">Exploitation & Scalabilité</h3>
+      <ul>
+        <li data-i18n="hub_scale_1">Connexion directe à Power BI</li>
+        <li data-i18n="hub_scale_2">Extraction via API Google & Python</li>
+        <li data-i18n="hub_scale_3">Intégration possible dans plateformes web</li>
+        <li data-i18n="hub_scale_4">Base prête pour migration PostgreSQL / ERP</li>
+      </ul>
+
+      <h3 data-i18n="hub_impact_title">Impact</h3>
+      <ul>
+        <li data-i18n="hub_imp_1">Centralisation des données stratégiques</li>
+        <li data-i18n="hub_imp_2">Accès temps réel pour la Direction et les équipes</li>
+        <li data-i18n="hub_imp_3">Amélioration de la prise de décision</li>
+        <li data-i18n="hub_imp_4">Gain de temps opérationnel</li>
+        <li data-i18n="hub_imp_5">Fondation pour transformation digitale interne</li>
+      </ul>
+
+      <h3 data-i18n="hub_diagram_title">Architecture simplifiée</h3>
+      <pre style="white-space:pre-wrap; opacity:.95;" data-i18n="hub_diagram">
+Utilisateurs
+     ↓
+Google Sheets (Cloud Data Layer)
+     ↓
+Google Apps Script (Automation Layer)
+     ↓
+Python / API / Power BI / Applications Web
+      </pre>
+
+      <p>
+        <a href="../index.html" data-i18n="back_portfolio">&#8592; Retour au portfolio</a>
+      </p>
+
+    </section>
+
+    <section class="footer">
+      <footer>
+        &copy; 2026 Gora DIONGUE
+      </footer>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

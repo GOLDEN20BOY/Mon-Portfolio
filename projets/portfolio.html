@@ -1,60 +1,135 @@
-<!-- Exemple : portfolio.html -->
+<!-- projets/portfolio.html -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Personnel</title>
+
+  <title data-i18n="port_page_title">Portfolio Web – Site vitrine (GitHub Pages)</title>
+
   <link rel="stylesheet" href="../styles.css" />
   <link rel="icon" type="image/png" href="../images/favicon.jpg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
+
 <body>
-  <div class="theme-toggle">
-    <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+
+  <!-- Top Controls (comme index.html) -->
+  <div class="top-controls">
+    <button id="darkModeToggle" class="icon-btn" aria-label="Activer le mode sombre">
+      <i class="fas fa-moon"></i>
+    </button>
   </div>
 
+  <!-- Header -->
   <header>
-    <h1>Gora DIONGUE</h1>
-    <p>Data Analyst | Développeur Web | Enseignant</p>
-    <a href="../cv/Gora DIONGUE CV Professional.pdf" download="Gora DIONGUE CV Professional" target="_blank" class="btn-cv">Télécharger CV</a>
+    <a href="../index.html" style="text-decoration: none;">
+      <h1>Gora DIONGUE</h1>
+    </a>
+
+    <p data-i18n="tagline">Data Analyst | Automatisation | Business Intelligence</p>
+
+    <a
+      href="../cv/Gora DIONGUE CV Professional.pdf"
+      download="Gora DIONGUE CV Professional"
+      target="_blank"
+      class="btn-cv"
+      data-i18n="download_cv"
+    >
+      Télécharger CV
+    </a>
   </header>
 
   <main>
-    <section>
-      <h2>Portfolio Personnel</h2>
-      <p>Site vitrine personnel développé avec HTML/CSS, publié sur GitHub Pages.</p>
+
+    <!-- PROJET -->
+    <section class="fade-in">
+
+      <h2 data-i18n="port_title">Portfolio Web — Site vitrine personnel (GitHub Pages)</h2>
+
+      <p data-i18n="port_intro">
+        Site portfolio conçu pour présenter mes projets, mes compétences et mes contacts de manière claire et professionnelle.
+        Déployé sur <strong>GitHub Pages</strong>, il sert de vitrine pour le recrutement et pour démontrer mes réalisations.
+      </p>
+
+      <h3 data-i18n="port_objectives_title">Objectifs</h3>
       <ul>
-        <li>HTML, CSS</li>
-        <li>Responsive design</li>
-        <li>Hébergement via GitHub Pages</li>
+        <li data-i18n="port_obj_1">Présenter mes projets et expériences de façon structurée</li>
+        <li data-i18n="port_obj_2">Offrir une navigation simple (sections + pages projets)</li>
+        <li data-i18n="port_obj_3">Mettre en avant une identité visuelle sobre et moderne</li>
+        <li data-i18n="port_obj_4">Rendre le site responsive (mobile / desktop)</li>
       </ul>
-      <div class="carousel-container">
-        <p>c est juste un essaie </p>
+
+      <h3 data-i18n="port_features_title">Fonctionnalités</h3>
+      <ul>
+        <li data-i18n="port_feat_1">Mode sombre (Dark Mode)</li>
+        <li data-i18n="port_feat_2">Filtres de projets par catégories</li>
+        <li data-i18n="port_feat_3">Pages projets détaillées + carrousels d’images</li>
+        <li data-i18n="port_feat_4">Formulaire de contact (Formspree)</li>
+        <li data-i18n="port_feat_5">Base prête pour la traduction (i18n)</li>
+      </ul>
+
+      <h3 data-i18n="port_tech_title">Technologies</h3>
+      <ul>
+        <li data-i18n="port_tech_1">HTML5 / CSS3 (responsive)</li>
+        <li data-i18n="port_tech_2">JavaScript (UI, interactions, filtres, animations)</li>
+        <li data-i18n="port_tech_3">GitHub Pages (déploiement)</li>
+      </ul>
+
+      <h3 data-i18n="port_links_title">Liens</h3>
+      <ul>
+        <li>
+          <strong data-i18n="port_demo_label">Démo</strong> :
+          <a href="https://golden20boy.github.io/Mon-Portfolio/" target="_blank" rel="noopener" data-i18n="port_demo_link">
+            Ouvrir le site
+          </a>
+        </li>
+        <li>
+          <strong data-i18n="port_repo_label">Code</strong> :
+          <a href="https://github.com/golden20boy/Mon-Portfolio" target="_blank" rel="noopener" data-i18n="port_repo_link">
+            Repo GitHub
+          </a>
+        </li>
+      </ul>
+
+      <h3 data-i18n="port_shots_title">Captures</h3>
+      <div class="carousel-container project-carousel" id="capturesCarousel">
         <div class="carousel">
-          <img src="../images/qrcode1.jpg" alt="QR Code 1">
+          <!-- Remplace par tes vraies captures -->
+          <img src="../images/portfolio1.png" alt="Portfolio - Page d'accueil">
+          <img src="../images/portfolio2.png" alt="Portfolio - Section projets">
+          <img src="../images/portfolio3.png" alt="Portfolio - Section projets">
         </div>
       </div>
-      <p><a href="../index.html">&#8592; Retour au portfolio</a></p>
+
+      <p style="opacity:.85;font-size:.95em;margin-top:1rem;" data-i18n="port_end_note">
+        Ce portfolio est conçu pour évoluer : ajout de nouveaux projets, amélioration UI et extension multi-langue.
+      </p>
+
+      <p>
+        <a href="../index.html" data-i18n="back_portfolio">&#8592; Retour au portfolio</a>
+      </p>
+
     </section>
 
+    <!-- Réseaux -->
     <section id="reseaux">
-      <h2>Réseaux & Pages</h2>
-      <div style="display: flex; gap: 1.5rem; justify-content: center; font-size: 1.8rem;">
-        <a href="https://www.facebook.com/gora.diongue.773" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/maths_code_delire?igsh=MWphYnd4ZHA5ZnJrNQ==" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/221778850501" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://golden20boy.github.io/MonPortfolio/" target="_blank"><i class="fas fa-globe"></i></a>
-        <a href="https://github.com/golden20boy" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/gora-diongue-08382b189" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <h2 data-i18n="reseaux_title">Réseaux & Pages</h2>
+      <div style="display:flex;gap:1.5rem;justify-content:center;font-size:1.8rem;">
+        <a href="https://www.facebook.com/gora.diongue.773" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/221778850501" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/golden20boy" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gora-diongue-08382b189" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
       </div>
     </section>
 
+    <!-- Footer -->
     <section class="footer">
       <footer>
-        &copy; 2025 Gora DIONGUE | <button id="langToggle">🇫🇷 / 🇬🇧</button>
+        &copy; 2026 Gora DIONGUE
       </footer>
     </section>
+
   </main>
 
   <script src="../script.js"></script>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gora DIONGUE - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="images/favicon.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+    </div>
+
+    <header>
+        <h1>Gora DIONGUE</h1>
+        <p>Data Analyst | Développeur Web | Enseignant</p>
+        <a href="cv/Gora DIONGUE CV Professional.pdf" download="Gora DIONGUE CV Professional" target="_blank" class="btn-cv">Télécharger CV</a>
+    </header>
+
+
+
+    <main>
+        <section>
+            <nav>
+                <div class="burger-menu" id="burgerMenu">&#9776;</div>
+                <ul id="navLinks">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="about">
+            <h2>À propos</h2>
+            <p>Étudiant en mathématiques, passionné par l'analyse de données et le développement web. J'enseigne les mathématiques et développe des applications web ou no-code, ainsi que des solutions d'analyse pour entreprises et écoles.</p>
+        </section>
+    
+        <section id="skills">
+            <h2>Compétences</h2>
+            <ul>
+            <li>Python, C, MATLAB</li>
+            <li>Excel, Power BI, Pandas, Seaborn, Matplotlib</li>
+            <li>HTML/CSS, Flask, React, Node.js (bases)</li>
+            <li>SQLite, Google Sheets, AppSheet</li>
+            <li>Google Apps Script, API REST</li>
+            <li>Deep Learning (en cours avec TensorFlow/Keras)</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="fade-in">
+            <h2>Projets</h2>
+            <div class="filter-buttons">
+              <button class="filter-btn" data-filter="all">Tous</button>
+              <button class="filter-btn" data-filter="python">Python</button>
+              <button class="filter-btn" data-filter="web">Web</button>
+              <button class="filter-btn" data-filter="powerbi">Power BI</button>
+              <button class="filter-btn" data-filter="appsheet">AppSheet</button>
+              <button class="filter-btn" data-filter="sheets">Google Sheets</button>
+            </div>
+          
+            <div class="projects-grid">
+<!--           
+              <a href="projets/python_data.html" class="project-card premium python">
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/python1.jpg" alt="Analyse Python 1">
+                    <img src="images/python2.jpg" alt="Analyse Python 2">
+                  </div>
+                </div>
+                <h3>Analyse de données</h3>
+                <p>Exploration de données avec Pandas, Seaborn, Matplotlib. Nettoyage, visualisations, statistiques descriptives.</p>
+              </a>
+          
+              <a href="projets/portfolio.html" class="project-card premium web">
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/portfolio1.jpg" alt="Portfolio 1">
+                    <img src="images/portfolio2.jpg" alt="Portfolio 2">
+                  </div>
+                </div>
+                <h3>Site Portfolio</h3>
+                <p>Portfolio personnel développé en HTML/CSS. Hébergé sur GitHub Pages.</p>
+              </a>
+              <a href="projets/flask_ecommerce.html" class="project-card premium web">
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/ecommerce1.jpg" alt="E-commerce 1">
+                    <img src="images/ecommerce2.jpg" alt="E-commerce 2">
+                  </div>
+                </div>
+                <h3>Site e-commerce - Flask</h3>
+                <p>Site de vente en ligne avec Flask (Python), HTML/CSS et SQLite. Fonctionnel localement.</p>
+              </a>
+              <a href="projets/appsheet_suivi.html" class="project-card premium appsheet sheets">
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/appsheet1.jpg" alt="AppSheet 1">
+                    <img src="images/appsheet2.jpg" alt="AppSheet 2">
+                  </div>
+                </div>
+                <h3>App de suivi des agents</h3>
+                <p>Application créée avec AppSheet pour suivre les négociations commerciales des agents terrain. Données stockées sur Google Sheets.</p>
+              </a>
+--> 
+              <a href="projets/powerbi_ngor.html" class="project-card premium powerbi">
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/acceuille.PNG" alt="PowerBI 1">
+                    <img src="images/suivi cot.PNG" alt="PowerBI 2">
+                  </div>
+                </div>
+                <h3>Système décisionnel Power BI </h3>
+                <p>Système Power BI automatisé pour le suivi financier et opérationnel</p>
+              </a>
+              <a href="projets/suivi_recouvrement.html" class="project-card premium sheets">
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/recouvrement_cover1.png" alt="Suivi recouvrement 1">
+                    <img src="images/recouvrement_cover2.png" alt="Suivi recouvrement 2">
+                  </div>
+                </div>
+                <h3>Suivi de recouvrement (Google Sheets)</h3>
+                <p>Vision temps réel, statuts payés/retards automatisés, vues par commercial et données prêtes pour Power BI.</p>
+              </a>
+              <a href="projets/qrcode_pointage.html" class="project-card premium web sheets">
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/qrcode1.jpg" alt="QR Code 1">
+                    <img src="images/qrcode2.jpg" alt="QR Code 2">
+                  </div>
+                </div>
+                <h3>QR Code - Pointage automatique</h3>
+                <p>Système de pointage automatisé avec Google Sheets et Google Apps Script. Scan via QR Code pour valider les présences.</p>
+              </a>
+              <a href="projets/mobi_pointage.html" class="project-card premium web">
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/mobi_pointage_cover1.png" alt="MOBI POINTAGE 1">
+                    <img src="images/mobi_pointage_cover2.png" alt="MOBI POINTAGE 2">
+                  </div>
+                </div>
+                <h3>MOBI POINTAGE (FastAPI)</h3>
+                <p>Plateforme interne multi-agents : authentification, rôles, dashboards, recouvrement et reporting (projet en cours).</p>
+              </a>
+              <a href="projets/mobi_data_hub.html" class="project-card premium sheets">
+                <div class="carousel-container">
+                  <div class="carousel">
+                    <img src="images/mobi_sheets_cover1.png" alt="MOBI Data Hub 1">
+                    <img src="images/mobi_sheets_cover2.png" alt="MOBI Data Hub 2">
+                  </div>
+                </div>
+                <h3>MOBI DATA HUB (Google Sheets)</h3>
+                <p>Centralisation, automatisation Apps Script, sécurité par rôles, validations et base prête pour Power BI / Python.</p>
+              </a>
+            </div>
+        </section>
+        <section id="reseaux">
+            <h2>Réseaux & Pages</h2>
+            <div style="display: flex; gap: 1.5rem; justify-content: center; font-size: 1.8rem;">
+            <a href="https://www.facebook.com/gora.diongue.773" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/maths_code_delire?igsh=MWphYnd4ZHA5ZnJrNQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/221778850501" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://golden20boy.github.io/MonPortfolio/" target="_blank"><i class="fas fa-globe"></i></a>
+            <a href="https://github.com/golden20boy" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gora-diongue-08382b189" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+        
+        <section id="contact" class="fade-in">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Nom" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+            <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+                <p>Email : <a href="mailto:goradiongue97@gmail.com">goradiongue97@gmail.com</a></p>
+                <p>
+                    Téléphone : 
+                    <a href="tel:+221778850501">+221 77 885 05 01</a> /
+                    <a href="tel:+221786998712">+221 78 699 87 12</a>
+                  </p>
+                  
+                <p>GitHub : <a href="https://github.com/golden20boy" target="_blank">github.com/golden20boy</a></p>
+            </div>
+        </section>
+          
+        <section class="footer">
+            <footer>
+                &copy; 2025 Gora DIONGUE | <button id="langToggle">🇫🇷 / 🇬🇧</button>
+            </footer>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

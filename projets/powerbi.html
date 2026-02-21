@@ -1,0 +1,155 @@
+<!-- projets/powerbi_mobi.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title data-i18n="pbi_page_title">Power BI – Système décisionnel MOBI SENEGAL</title>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/png" href="../images/favicon.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Top Controls (comme index.html) -->
+  <div class="top-controls">
+
+    <button id="darkModeToggle" class="icon-btn" aria-label="Activer le mode sombre">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <a href="../index.html" style="text-decoration: none;">
+      <h1>Gora DIONGUE</h1>
+    </a>
+
+    <p data-i18n="tagline">Data Analyst | Automatisation | Business Intelligence</p>
+
+    <a
+      href="../cv/Gora DIONGUE CV Professional.pdf"
+      download="Gora DIONGUE CV Professional"
+      target="_blank"
+      class="btn-cv"
+      data-i18n="download_cv"
+    >
+      Télécharger CV
+    </a>
+  </header>
+
+  <main>
+
+    <!-- PROJET -->
+    <section class="fade-in">
+
+      <h2 data-i18n="pbi_title">Système décisionnel Power BI – MOBI SENEGAL HOLDING</h2>
+
+      <p data-i18n="pbi_intro">
+        Projet de <strong>Business Intelligence en production</strong> développé durant mon
+        <strong>stage (3 mois)</strong>, puis consolidé et étendu pendant un
+        <strong>CDD</strong>.
+        Le projet a évolué d’un dashboard exploratoire vers un
+        <strong>système complet de pilotage financier et opérationnel</strong>.
+      </p>
+
+      <h3 data-i18n="pbi_objectives_title">Objectifs</h3>
+      <ul>
+        <li data-i18n="pbi_obj_1">Centraliser les données opérationnelles et financières</li>
+        <li data-i18n="pbi_obj_2">Automatiser la collecte depuis Google Sheets</li>
+        <li data-i18n="pbi_obj_3">Fournir des tableaux de bord fiables et dynamiques</li>
+        <li data-i18n="pbi_obj_4">Permettre un accès en temps réel via Power BI Service</li>
+        <li data-i18n="pbi_obj_5">Produire des rapports périodiques et d’urgence</li>
+      </ul>
+
+      <h3 data-i18n="pbi_scope_title">Périmètre couvert</h3>
+      <ul>
+        <li data-i18n="pbi_scope_1">Chiffre d’affaires : Sabot, Parking, Recouvrement</li>
+        <li data-i18n="pbi_scope_2">Charges de fonctionnement</li>
+        <li data-i18n="pbi_scope_3">Journal de caisse</li>
+        <li data-i18n="pbi_scope_4">Investissements & réinvestissements</li>
+        <li data-i18n="pbi_scope_5">Rémunérations</li>
+        <li data-i18n="pbi_scope_6">Logistique</li>
+        <li data-i18n="pbi_scope_7">Analyse par zone, agent, secteur, période</li>
+      </ul>
+
+      <h3 data-i18n="pbi_arch_title">Architecture technique</h3>
+      <ul>
+        <li data-i18n="pbi_arch_1"><strong>Source :</strong> Google Sheets (données terrain)</li>
+        <li data-i18n="pbi_arch_2"><strong>ETL :</strong> Script Python (collecte, nettoyage, structuration)</li>
+        <li data-i18n="pbi_arch_3"><strong>BI :</strong> Power BI Desktop (modèle & visualisations)</li>
+        <li data-i18n="pbi_arch_4"><strong>Diffusion :</strong> Power BI Service (rapports en ligne)</li>
+      </ul>
+
+      <h3 data-i18n="pbi_refresh_title">Actualisation des données</h3>
+      <ul>
+        <li data-i18n="pbi_refresh_1">Exécution du script Python</li>
+        <li data-i18n="pbi_refresh_2">Actualisation du modèle Power BI Desktop</li>
+        <li data-i18n="pbi_refresh_3">Publication vers Power BI Service</li>
+        <li data-i18n="pbi_refresh_4">Données disponibles pour les utilisateurs concernés</li>
+      </ul>
+
+      <h3 data-i18n="pbi_reports_title">Types de rapports</h3>
+      <ul>
+        <li data-i18n="pbi_rep_1">Rapports hebdomadaires</li>
+        <li data-i18n="pbi_rep_2">Rapports mensuels</li>
+        <li data-i18n="pbi_rep_3">Rapports d’urgence en cas de situation critique</li>
+      </ul>
+
+      <h3 data-i18n="pbi_tech_title">Technologies</h3>
+      <ul>
+        <li data-i18n="pbi_tech_1">Power BI Desktop & Power BI Service</li>
+        <li data-i18n="pbi_tech_2">Python (pandas, automatisation)</li>
+        <li data-i18n="pbi_tech_3">Google Sheets & Google Drive</li>
+        <li data-i18n="pbi_tech_4">Analyse financière & Data Visualisation</li>
+      </ul>
+
+      <h3 data-i18n="pbi_shots_title">Captures du système</h3>
+      <p data-i18n="pbi_shots_note">
+        Les données affichées sont des données de démonstration issues d’un modèle réel.
+        Les chiffres ont été modifiés à des fins de confidentialité.
+      </p>
+
+      <div class="carousel-container project-carousel" id="capturesCarousel">
+        <div class="carousel">
+          <img src="../images/acceuille.PNG" alt="Dashboard global Power BI">
+          <img src="../images/suivi cot.PNG" alt="Suivi et indicateurs">
+        </div>
+      </div>
+
+      <p style="opacity:.85;font-size:.95em;margin-top:1rem;" data-i18n="pbi_end_note">
+        Les rapports sont accessibles en ligne via Power BI Service et utilisés pour la prise de décision
+        opérationnelle et stratégique.
+      </p>
+
+      <p>
+        <a href="../index.html" data-i18n="back_portfolio">&#8592; Retour au portfolio</a>
+      </p>
+    </section>
+
+    <!-- Réseaux -->
+    <section id="reseaux">
+      <h2 data-i18n="reseaux_title">Réseaux & Pages</h2>
+      <div style="display:flex;gap:1.5rem;justify-content:center;font-size:1.8rem;">
+        <a href="https://www.facebook.com/gora.diongue.773" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/221778850501" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/golden20boy" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gora-diongue-08382b189" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <footer>
+        &copy; 2026 Gora DIONGUE
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

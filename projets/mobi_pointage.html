@@ -1,0 +1,166 @@
+<!-- projets/mobi_pointage.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title data-i18n="mp_page_title">
+    MOBI POINTAGE - Plateforme interne (FastAPI)
+  </title>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/png" href="../images/favicon.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Top Controls -->
+  <div class="top-controls">
+
+    <button id="darkModeToggle" class="icon-btn" aria-label="Activer le mode sombre">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <a href="../index.html" style="text-decoration: none;">
+      <h1>Gora DIONGUE</h1>
+    </a>
+
+    <p data-i18n="tagline">
+      Data Analyst | Automatisation | Business Intelligence
+    </p>
+
+    <a
+      href="../cv/Gora DIONGUE CV Professional.pdf"
+      download="Gora DIONGUE CV Professional"
+      target="_blank"
+      class="btn-cv"
+      data-i18n="download_cv"
+    >
+      Télécharger CV
+    </a>
+  </header>
+
+  <main>
+    <section class="fade-in">
+
+      <h2 data-i18n="mp_title">
+        MOBI POINTAGE — Plateforme interne de pilotage & reporting (FastAPI)
+      </h2>
+
+      <p class="highlight-box" data-i18n="mp_status" data-i18n-html>
+        🚧 <strong>Projet en cours</strong> — base technique stable, modules principaux déjà développés.
+        Déploiement et finalisation UI/optimisations en progression.
+      </p>
+
+      <p data-i18n="mp_intro" data-i18n-html>
+        <strong>MOBI POINTAGE</strong> est une plateforme web interne conçue pour centraliser la saisie quotidienne,
+        le suivi opérationnel et le reporting multi-agents.
+        L’objectif est de passer d’un fonctionnement basé sur fichiers/feuilles à un système
+        <strong>sécurisé</strong>, <strong>structuré</strong> et <strong>exploitable en temps réel</strong>,
+        avec une base SQL et des API prêtes pour dashboards et analyses.
+      </p>
+
+      <h3 data-i18n="mp_context_title">Contexte</h3>
+      <p data-i18n="mp_context">
+        Après plusieurs automatisations no-code (Google Sheets / Apps Script), le besoin a évolué vers une solution
+        plus robuste : gestion des utilisateurs, rôles, historique, agrégations, tableaux de bord et export BI.
+        J’ai donc initié le développement d’une plateforme web complète capable de supporter la croissance
+        et de réduire les limites des fichiers partagés.
+      </p>
+
+      <h3 data-i18n="mp_objectives_title">Objectifs</h3>
+      <ul>
+        <li data-i18n="mp_obj_1">Centraliser les opérations quotidiennes (saisie, suivi, reporting)</li>
+        <li data-i18n="mp_obj_2">Mettre en place une authentification sécurisée et des rôles (Admin / Agent)</li>
+        <li data-i18n="mp_obj_3">Créer des vues par agent (portefeuille) + une vue globale pour la direction</li>
+        <li data-i18n="mp_obj_4">Automatiser les statistiques (cumul, séries temporelles, KPI)</li>
+        <li data-i18n="mp_obj_5">Préparer le déploiement et la montée en charge (base SQL, API, dashboards)</li>
+      </ul>
+
+      <h3 data-i18n="mp_features_title">Fonctionnalités clés</h3>
+      <ul>
+        <li data-i18n="mp_feat_1"><strong>Connexion / Déconnexion</strong> avec gestion de session</li>
+        <li data-i18n="mp_feat_2"><strong>Rôles</strong> : Admin (vue globale) / Agent (vue portefeuille)</li>
+        <li data-i18n="mp_feat_3"><strong>Dashboards</strong> : compteurs + graphiques (via endpoints JSON)</li>
+        <li data-i18n="mp_feat_4"><strong>Suivi recouvrement</strong> : recherche, filtres, agrégation, détail client</li>
+        <li data-i18n="mp_feat_5"><strong>Reporting</strong> : saisie journalière et synthèses exportables</li>
+        <li data-i18n="mp_feat_6"><strong>Historique / Activity</strong> : traçabilité des actions et mises à jour</li>
+        <li data-i18n="mp_feat_7"><strong>Templates</strong> HTML (Jinja2) + pages dédiées par module</li>
+      </ul>
+
+      <h3 data-i18n="mp_arch_title">Architecture technique</h3>
+      <ul>
+        <li data-i18n="mp_arch_1">Backend : <strong>FastAPI (Python)</strong></li>
+        <li data-i18n="mp_arch_2">Base de données : <strong>PostgreSQL</strong></li>
+        <li data-i18n="mp_arch_3">Accès DB : <strong>SQLAlchemy</strong></li>
+        <li data-i18n="mp_arch_4">Templates : <strong>Jinja2</strong></li>
+        <li data-i18n="mp_arch_5">Sécurité : hash mot de passe + session cookie</li>
+        <li data-i18n="mp_arch_6">API internes : endpoints JSON pour compteurs & séries temporelles</li>
+      </ul>
+
+      <h3 data-i18n="mp_modules_title">Modules</h3>
+      <ul>
+        <li data-i18n="mp_mod_1"><strong>Auth</strong> : login, session, contrôle des accès</li>
+        <li data-i18n="mp_mod_2"><strong>Dashboard</strong> : vue admin / agent + stats</li>
+        <li data-i18n="mp_mod_3"><strong>Recouvrement</strong> : gestion portefeuille et états</li>
+        <li data-i18n="mp_mod_4"><strong>Reports</strong> : saisie + synthèses</li>
+        <li data-i18n="mp_mod_5"><strong>Factures</strong> : préparation génération & suivi</li>
+        <li data-i18n="mp_mod_6"><strong>Activity</strong> : historique des actions</li>
+      </ul>
+
+      <h3 data-i18n="mp_strengths_title">Points forts</h3>
+      <ul>
+        <li data-i18n="mp_strength_1">Projet réel entreprise : logique métier + rôles + sécurité</li>
+        <li data-i18n="mp_strength_2">Structure backend propre (routes modulaires, templates, config)</li>
+        <li data-i18n="mp_strength_3">Prêt pour BI : données structurées + endpoints statistiques</li>
+        <li data-i18n="mp_strength_4">Évolutif : migration progressive Sheets → SQL</li>
+      </ul>
+
+      <h3 data-i18n="mp_roadmap_title">Roadmap</h3>
+      <ul>
+        <li data-i18n="mp_road_1">Finaliser l’interface (UX) et compteurs dashboard</li>
+        <li data-i18n="mp_road_2">Durcir la sécurité (HTTPS, cookies sécurisés)</li>
+        <li data-i18n="mp_road_3">Optimiser requêtes & index DB</li>
+        <li data-i18n="mp_road_4">Déploiement (Docker/VPS) + monitoring</li>
+        <li data-i18n="mp_road_5">Connexion BI en production</li>
+      </ul>
+
+      <h3 data-i18n="mp_shots_title">Captures</h3>
+
+      <div class="carousel-container scrollable" id="capturesCarousel">
+        <div class="carousel">
+          <img src="../images/mobi_pointage_1.png" alt="Login MOBI POINTAGE">
+          <img src="../images/mobi_pointage_2.png" alt="Dashboard Admin">
+          <img src="../images/dashboard.png" alt="Dashboard Agent">
+        </div>
+      </div>
+
+      <p style="opacity:.85;font-size:.95em;margin-top:1rem;" data-i18n="mp_note">
+        Note : en environnement entreprise, les données visibles doivent être anonymisées.
+      </p>
+
+      <p>
+        <a href="../index.html" data-i18n="back_portfolio">
+          &#8592; Retour au portfolio
+        </a>
+      </p>
+
+    </section>
+
+    <section class="footer">
+      <footer>
+        &copy; 2026 Gora DIONGUE
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="../script.js"></script>
+
+</body>
+</html>
